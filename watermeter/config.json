@@ -1,0 +1,63 @@
+{
+  "registerDevice": {
+    "table": "Devices",
+    "DName": "DomaDevice",
+    "IDDevice": 123456,
+    "Address": "Hribiky 105",
+    "Email": "jozef.kompan@student.tuke.sk"
+  },
+  "pyTesseract": {
+    "tesseractTable": "tesseractDataExtracted",
+    "dataAzureTable": "dataAzure",
+    "maxLiterCount": 50,
+    "databaseName": "digitalizer.db",
+    "imagePath": "cropped_pyTesseract.jpg",
+    "gear": "wheel",
+    "gearCropper": "gearCropper.py"
+  },
+  "pushDataAzure": {
+    "dataAzureTable": "dataAzure",
+    "databaseName": "digitalizer.db",
+    "table": "DataExtracted",
+    "IDDevice": 123456
+  },
+  "ledOn": {
+    "ledPin": 17
+  },
+  "ledOff": {
+    "ledPin": 17
+  },
+  "databaseSaveImage": {
+    "databaseName": "digitalizer.db"
+  },
+  "cropper": {
+    "leftEdgePercentage": 0.215,
+    "topEdgePercentage": 0.325,
+    "rightEdgePercentage": 0.7827,
+    "bottomEdgePercentage": 0.467,
+    "rotation": -174.2
+  },
+  "cropper2":{
+    "imgPath": "cropped_pyTesseract.jpg",
+    "gearCount": 8,
+    "gearSize": 80,
+    "gearSpace": 20,
+    "outputPath": "wheel"
+  },
+  "azCandidateRecognize": {
+    "tesseractTable":"tesseractDataExtracted",
+    "dataAzureTable":"dataAzure",
+    "photoTable":"photos",
+    "maxLiterCount":50,
+    "timePeriod":30,
+    "tmpImage":"tmpImg.jpg",
+    "imagePath":"image.jpg",
+    "databaseName":"digitalizer.db",
+    "cropper":"cropper.py"
+  },
+  "clearDatabase": {
+    "databaseName": "digitalizer.db",
+    "dayBack": 7
+  }
+
+}

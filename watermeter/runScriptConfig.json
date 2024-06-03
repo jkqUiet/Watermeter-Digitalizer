@@ -1,0 +1,13 @@
+{
+  "python_interpreter": "python",
+  "led_on_script": "ledOn.py",
+  "led_off_script": "ledOff.py",
+  "raspistill_command": "raspistill -q 100 -o image.jpg",
+  "database_save_script": "databaseSaveImage.py",
+  "cropper_script": "cropper.py",
+  "resize_sharpen_script": "resizeSharpen.sh",
+  "pytesseract_script": "pyTesseract.py",
+  "image_input_path": "image.jpg",
+  "cropped_image_output_path": "cropped.jpg",
+  "resized_image_output_path": "resized.jpg"
+}
